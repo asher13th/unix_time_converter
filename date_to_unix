@@ -1,0 +1,6 @@
+/*Check the logical of the UNIX before applying*/
+
+SELECT
+  ROUND((TRUNC(SYSDATE-3) - TO_DATE('19700101','yyyymmdd'))*24*60*60,0)) AS UNIX_TIME
+FROM TABLE
+;
